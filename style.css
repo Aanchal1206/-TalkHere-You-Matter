@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0984e3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Community Sections */
+.intro, .community-guidelines, .discussion-threads, .join-community {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0984e3;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #74b9ff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* Discussion Threads */
+.thread {
+    background-color: #dfe6e9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.thread h3 {
+    color: #0984e3;
+}
+
+.thread p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #0984e3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .talk-here {
+    margin-top: 15px;
+}
+
+footer .talk-here a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2d3436;
+    color: #dfe6e9;
+}
+
+header.dark-mode {
+    background-color: #34495e;
+}
+
+nav a.dark-mode {
+    color: #b2bec3;
+}
+
+footer.dark-mode {
+    background-color: #34495e;
+    color: #dfe6e9;
+}
+
+footer .talk-here.dark-mode {
+    background-color: #2d3436;
+    color: #dfe6e9;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Hero Section Styles */
+.hero {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://cdn.who.int/media/images/default-source/mental-health-and-substance-abuse/adobestock_178067240_preview.tmb-1366v.jpeg?sfvrsn=8c73c66c_6');
+    background-size: cover; /* Ensure the image covers the full area */
+    background-position: center center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Overlay (optional, to add a semi-transparent background to text) */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text stand out */
+    z-index: 1;
+}
